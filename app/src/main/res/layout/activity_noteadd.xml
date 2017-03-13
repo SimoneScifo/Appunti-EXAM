@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    android:id="@+id/activity_noteadd">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/toolbar">
+
+        <EditText
+            android:id="@+id/titleET"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Titolo"
+            android:textSize="30dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/supportDateTV"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleET"
+            android:text="Data"
+            android:textSize="20dp"/>
+
+
+
+
+
+        <EditText
+            android:id="@+id/dateET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Inserisci Data"
+            android:textSize="20dp"
+            android:layout_alignBaseline="@+id/supportDateTV"
+            android:layout_alignBottom="@+id/supportDateTV"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:focusable="false"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inserisci colore"
+            android:id="@+id/colorET"
+            android:layout_below="@+id/dateET"/>
+        <EditText
+            android:id="@+id/textET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/colorET"
+            android:hint="Testo"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

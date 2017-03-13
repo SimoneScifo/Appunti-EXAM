@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_layoutSTAG"
+        android:orderInCategory="300"
+        android:icon="@drawable/view_dashboard"
+        android:title="LAYOUT"
+        app:showAsAction="always">
+
+    </item>
+    <item
+        android:id="@+id/action_order"
+        android:orderInCategory="300"
+        android:icon="@drawable/down"
+        android:title="ORDER"
+        app:showAsAction="always">
+
+    </item>
+</menu>
